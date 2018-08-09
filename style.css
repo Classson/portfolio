@@ -9,6 +9,7 @@ body {
     font-family: sans-serif;
     padding: 0px;
     margin: 0px;
+    text-align: center;
 }
 
 nav {
@@ -34,6 +35,23 @@ li {
 
 main {
     margin-top: 90px;
+    /*padding: 10px 50px 10px 50px;*/
+}
+
+#welcome-section {
+    background-color: cornflowerblue;
+    width: 100%;
+    padding: 0px;
+    margin 0px;
+    height: 100vh;
+}
+
+#welcome-section h1 {
+    padding-top: 40px;
+}
+
+#gif {
+    width: 350px;
 }
 
 .preview {
