@@ -32,8 +32,8 @@ li {
     padding: 10px 30px 10px 30px;
 }
 
-#main-section {
-    top: 300px;
+main {
+    margin-top: 90px;
 }
 
 .preview {
@@ -45,6 +45,21 @@ a {
     text-decoration: none;
 }
 
-#contact img {
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+#jodi {
     width: 300px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contact a {
+    padding: 10px 30px 10px 30px;
 }
