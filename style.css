@@ -33,12 +33,8 @@ li {
     padding: 10px 30px 10px 30px;
 }
 
-main {
-    margin-top: 90px;
-    /*padding: 10px 50px 10px 50px;*/
-}
-
 #welcome-section {
+    margin-top: 90px;
     background-color: cornflowerblue;
     width: 100%;
     padding: 0px;
@@ -63,9 +59,13 @@ a {
     text-decoration: none;
 }
 
+i {
+    font-size: 70px;
+}
+
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr;
 }
 
 #jodi {
