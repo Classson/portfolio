@@ -50,8 +50,8 @@ li {
     width: 350px;
 }
 
-.preview {
-    width: 200px;
+#projects {
+    padding: 20px;
 }
 
 a {
@@ -61,6 +61,15 @@ a {
 
 i {
     font-size: 70px;
+    padding: 25px;
+}
+
+i:hover {
+    color: rgb(25, 25, 76);
+}
+
+a:hover {
+    color: rgb(25, 25, 76);
 }
 
 #projects {
