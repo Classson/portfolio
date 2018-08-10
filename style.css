@@ -90,3 +90,18 @@ a:hover {
 #contact a {
     padding: 10px 30px 10px 30px;
 }
+
+
+@media (max-width: 600px) {
+    
+    ul {
+        justify-content: center;
+    }
+    #projects {
+        grid-template-columns: 1fr;
+    }
+    
+    #gif {
+        width: 250px;
+    }
+}
