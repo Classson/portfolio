@@ -46,8 +46,12 @@ li {
     padding-top: 40px;
 }
 
-#gif {
+#tattoo {
     width: 350px;
+}
+
+#about {
+    padding: 45px;
 }
 
 #projects {
