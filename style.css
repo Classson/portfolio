@@ -51,6 +51,9 @@ main {
     margin 0px;
     height: 100vh;
     animation: bkFade 10s ease infinite;
+    -webkit-animation: bkFade 10s ease infinite;
+    -moz-animation: bkFade 10s ease infinite;
+    -o-animation: bkFade 10s ease infinite;
     background-size: 400% 400%;;
 }
 
@@ -80,12 +83,6 @@ main {
     border: 3px solid #f8c23f;
     filter: none;
 }
-
-/*
-.project:hover {
-    filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(200%) contrast(0.7);
-}
-*/
 
 a {
     color: rgb(38, 76, 114);
@@ -125,6 +122,22 @@ i {
 }
 
 @keyframes bkFade { 
+    0%{background-position:75% 0%}
+    50%{background-position:26% 100%}
+    100%{background-position:75% 0%}
+}
+
+@-webkit-keyframes bkFade {
+    0%{background-position:75% 0%}
+    50%{background-position:26% 100%}
+    100%{background-position:75% 0%}
+}
+@-moz-keyframes bkFade {
+    0%{background-position:75% 0%}
+    50%{background-position:26% 100%}
+    100%{background-position:75% 0%}
+}
+@-o-keyframes bkFade {
     0%{background-position:75% 0%}
     50%{background-position:26% 100%}
     100%{background-position:75% 0%}
