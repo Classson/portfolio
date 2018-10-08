@@ -4,7 +4,7 @@ div {
 }
 
 body {
-    background-color: rgb(195, 214, 244);
+    background-color: #FBF9F6;
     color: rgb(38, 76, 114);
     font-family: 'IBM Plex Mono', monospace;
     padding: 0px;
@@ -17,7 +17,7 @@ nav {
     width: 100%;
     height: 90px;
     position: fixed;
-    background-color: #3f7fbf;
+    background-color: #6B7C8E;
 }
 
 ul {
@@ -39,7 +39,7 @@ main {
 }
 
 #welcome-section {
-    background: linear-gradient(332deg, #797493, #223562, #87aafc);
+    background: linear-gradient(332deg, #DBC8AB, #C8C7C4, #FBF9F6);
     margin-top: 90px;
     width: 100%;
     padding: 0px;
@@ -66,8 +66,7 @@ main {
 }
 
 .screenshot {
-    width: 300px;
-    height: 230px;
+    width: 38vw;
 }
 
 a {
