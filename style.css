@@ -18,6 +18,7 @@ nav {
     height: 90px;
     position: fixed;
     background-color: #6B7C8E;
+    z-index: 10000;
 }
 
 ul {
@@ -39,13 +40,14 @@ main {
 }
 
 #welcome-section {
-    background: linear-gradient(332deg, #DBC8AB, #C8C7C4, #FBF9F6);
+/*    background: linear-gradient(332deg, #DBC8AB, #C8C7C4, #FBF9F6);*/
+    background: linear-gradient(332deg, #afa088, #C8C7C4, #FBF9F6);
     margin-top: 90px;
     width: 100%;
     padding: 0px;
     margin 0px;
     height: 100vh;
-    animation: bkFade 22s ease infinite;
+    animation: bkFade 5s ease infinite;
     background-size: 200% 200%;;
 }
 
@@ -67,6 +69,8 @@ main {
 
 .screenshot {
     width: 38vw;
+    min-width: 250px;
+    ?
 }
 
 a {
@@ -80,13 +84,8 @@ a {
     padding: 20px;
 }
 
-#jodi {
-    width: 300px;
-}
-
 #contact {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
