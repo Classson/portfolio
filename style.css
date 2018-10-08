@@ -21,6 +21,10 @@ nav {
     z-index: 10000;
 }
 
+a:hover {
+    color: #f8c23f;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -40,15 +44,14 @@ main {
 }
 
 #welcome-section {
-/*    background: linear-gradient(332deg, #DBC8AB, #C8C7C4, #FBF9F6);*/
-    background: linear-gradient(332deg, #afa088, #C8C7C4, #FBF9F6);
+    background: linear-gradient(332deg, #f8c23f, #C8C7C4, #8193a5);
     margin-top: 90px;
     width: 100%;
     padding: 0px;
     margin 0px;
     height: 100vh;
-    animation: bkFade 5s ease infinite;
-    background-size: 200% 200%;;
+    animation: bkFade 10s ease infinite;
+    background-size: 400% 400%;;
 }
 
 #welcome-section h1 {
@@ -70,8 +73,19 @@ main {
 .screenshot {
     width: 38vw;
     min-width: 250px;
-    ?
+    filter: grayscale(1);
 }
+
+.screenshot:hover {
+    border: 3px solid #f8c23f;
+    filter: none;
+}
+
+/*
+.project:hover {
+    filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(200%) contrast(0.7);
+}
+*/
 
 a {
     color: rgb(38, 76, 114);
@@ -87,6 +101,7 @@ a {
 #contact {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 #contact a {
@@ -95,6 +110,10 @@ a {
 
 h1 {
     padding-top: 20px;
+}
+
+i {
+    font-size: 2em;
 }
 
 @keyframes bkFade { 
@@ -108,6 +127,11 @@ h1 {
     ul {
         justify-content: center;
     }
+    
+    li {
+        font-size: 4.5vw;
+    }
+    
     #projects {
         grid-template-columns: 1fr;
     }
