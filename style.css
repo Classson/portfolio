@@ -123,23 +123,23 @@ i {
 
 @keyframes bkFade { 
     0%{background-position:75% 0%}
-    50%{background-position:26% 100%}
+    50%{background-position:25% 100%}
     100%{background-position:75% 0%}
 }
 
 @-webkit-keyframes bkFade {
     0%{background-position:75% 0%}
-    50%{background-position:26% 100%}
+    50%{background-position:25% 100%}
     100%{background-position:75% 0%}
 }
 @-moz-keyframes bkFade {
     0%{background-position:75% 0%}
-    50%{background-position:26% 100%}
+    50%{background-position:25% 100%}
     100%{background-position:75% 0%}
 }
 @-o-keyframes bkFade {
     0%{background-position:75% 0%}
-    50%{background-position:26% 100%}
+    50%{background-position:25% 100%}
     100%{background-position:75% 0%}
 }
 
