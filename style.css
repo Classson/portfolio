@@ -4,9 +4,9 @@ div {
 }
 
 body {
-    background-color: rgba(63, 127, 191, 0.2);
+    background-color: rgb(195, 214, 244);
     color: rgb(38, 76, 114);
-    font-family: sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -33,13 +33,20 @@ li {
     padding: 10px 30px 10px 30px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 #welcome-section {
+    background: linear-gradient(332deg, #797493, #223562, #87aafc);
     margin-top: 90px;
-    background-color: cornflowerblue;
     width: 100%;
     padding: 0px;
     margin 0px;
     height: 100vh;
+    animation: bkFade 22s ease infinite;
+    background-size: 200% 200%;;
 }
 
 #welcome-section h1 {
@@ -72,7 +79,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
-    height: 100vh;
 }
 
 #jodi {
@@ -93,6 +99,11 @@ h1 {
     padding-top: 20px;
 }
 
+@keyframes bkFade { 
+    0%{background-position:75% 0%}
+    50%{background-position:26% 100%}
+    100%{background-position:75% 0%}
+}
 
 @media (max-width: 600px) {
     
@@ -101,9 +112,5 @@ h1 {
     }
     #projects {
         grid-template-columns: 1fr;
-    }
-    
-    #gif {
-        width: 250px;
     }
 }
