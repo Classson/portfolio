@@ -116,6 +116,14 @@ i {
     font-size: 2em;
 }
 
+#projLink:target {
+    padding-top: 100px;
+}
+
+#aboutLink:target {
+    padding-top: 100px;
+}
+
 @keyframes bkFade { 
     0%{background-position:75% 0%}
     50%{background-position:26% 100%}
