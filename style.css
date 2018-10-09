@@ -98,6 +98,11 @@ a {
     padding: 20px;
 }
 
+.projDes {
+    padding: 0px 18px 0px 18px;
+    font-size: 14px;
+}
+
 #contact {
     display: flex;
     justify-content: center;
