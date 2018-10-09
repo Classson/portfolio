@@ -49,7 +49,10 @@ main {
     width: 100%;
     padding: 0px;
     margin 0px;
-    height: 100vh;
+    height: calc(100vh - 60px);
+    height: -o-calc(100vh - 60px);
+    height: -webkit-calc(100vh - 60px);
+    height: -moz-calc(100vh - 60px);
     animation: bkFade 10s ease infinite;
     -webkit-animation: bkFade 10s ease infinite;
     -moz-animation: bkFade 10s ease infinite;
