@@ -1,67 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86"
+    />
     <title>Alex Mikulewicz Portfolio</title>
     <!-- css stylesheet -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav id="navbar">
-        <ul>
-            <a href="#aboutLink"><li>About</li></a>
-            <a href="#projLink"><li>Projects</li></a>
-            <a href="#contact"><li>Contact</li></a>
-        </ul>
+      <ul>
+        <a href="#aboutLink"><li>About</li></a>
+        <a href="#projLink"><li>Projects</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
     </nav>
     <main id="main-section">
-        <div id="welcome-section">
-            <h1>alex loves the internet</h1>
-            <img id="tattoo" src="https://i.postimg.cc/wTzs1Qrw/20181007_185729.jpg">
+      <div id="welcome-section">
+        <h1>alex loves the internet</h1>
+        <img
+          id="tattoo"
+          src="https://i.postimg.cc/wTzs1Qrw/20181007_185729.jpg"
+        />
+      </div>
+      <h1 id="aboutLink">about</h1>
+      <div id="about">
+        <h3>
+          Alex loves the internet so much she got a tattoo for it. After
+          spending much of her career working in logistics with geographic data,
+          she saw the potential of automating some of her work. That got her
+          interested in programming which led her to the Grace Hopper program at
+          Fullstack. Now that She's had a chance to learn and work with
+          javascript using PostgreSQL, Express, React and Node she's excited to
+          join a team as a fullstack software engineer working on interesting
+          problems. When she's not coding you can find her lending a hand at
+          Tridroid Records, goofing around with her cat, clinic escorting at
+          Planned Parenthood, or just waiting for the G train. Check out some of
+          her projects below.
+        </h3>
+      </div>
+      <h1 id="projLink">projects</h1>
+      <div id="projects">
+        <div class="project">
+          <a href="https://github.com/Classson/nycFilm" target="_blank"
+            ><h3 class="project-tile">What's Filming Where</h3>
+            <img
+              class="screenshot"
+              src="https://i.postimg.cc/WzqpC8vt/Screen-Shot-2019-04-09-at-5-23-45-PM.png"
+          /></a>
+
+          <p class="projDes">
+            What's Filming Where is a data visualization app that shows the
+            number of film permits per borough and per zip code in 3 different
+            years. The project pulls film permit numbers in the form of JSON
+            data from NYC Open Data using SoQL queries to their api. I
+            synthesized the film permit data with geoJSON files of each borough
+            and zip code in NYC. I then displayed the information in maps and
+            bar graphs using the data visualization library d3 and the frontend
+            framework React.
+          </p>
         </div>
-        <h1 id="aboutLink">about</h1>
-        <div id="about">
-            <h3>Alex loves the internet so much she got a tattoo for it. After spending much of her career working in logistics with geographic data, she saw the potential of automating some of her work. That got her interested in programming which led her to the Grace Hopper program at Fullstack. Now that She's had a chance to learn and work with javascript using PostgreSQL, Express, React and Node she's excited to join a team as a fullstack software engineer working on interesting problems. When she's not coding you can find her lending a hand at Tridroid Records, goofing around with her cat, clinic escorting at Planned Parenthood, or just waiting for the G train. Check out some of her projects below.</h3>
+        <div class="project">
+          <a href="https://classson.github.io/markov/" target="_blank"
+            ><h3 class="project-tile">Poem Generator</h3>
+            <img
+              class="screenshot"
+              src="https://i.postimg.cc/RVWyFrvt/resized_Mark.png"
+          /></a>
+
+          <p class="projDes">
+            A JavaScript poem generator that uses a Markov Chain either one or
+            two words deep. "Poems" are created using a randomly selected first
+            word from user inputed text with either random or user inputed words
+            per line and lines per poem.
+          </p>
         </div>
-        <h1 id="projLink">projects</h1>
-        <div id="projects">
-            <div class="project">
-                <a href="https://classson.github.io/markov/" target="_blank"><h3 class="project-tile">Poem Generator</h3>
-                    <img class="screenshot" src="https://i.postimg.cc/RVWyFrvt/resized_Mark.png"></a>
-                <p class="projDes">A JavaScript poem generator that uses a Markov Chain either one or two words deep. "Poems" are created using a randomly selected first word from user inputed text with either random or user inputed words per line and lines per poem.</p>
-            </div>
-            <div class="project">
-                <a href="http://www.detectex.dev/" target="_blank"><h3 class="project-tile">DetectEx</h3>
-                    <img class="screenshot" src="https://i.postimg.cc/G2pCwtdN/Detect-Screen.png"></a>
-                <p class="projDes">DetectEx is an educational game that teaches the player to use Regular Expressions through a fun puzzle-solving adventure. We integrated an Express server with a PostgreSQL database in order to track user location and send game data based on user progress in realtime. On the front end we used React and Material UI to render the game as a single page web application. Sound, animation and a fun story make for an engaging user experience.</p>
-            </div>
-             <div class="project">
-                <a href="https://classson.github.io/sudoku/" target="_blank"><h3 class="project-tile">Sudoku Checker</h3>
-                 <img class="screenshot" src="https://i.postimg.cc/d3LNNf6r/resized_Sud2.png"></a>
-                 <p class="projDes">Sudoku Checker is a site that accepts an array from the user and checks it against sudoku rules. The input grid is then displayed with incorrect rows, columns, sections and numbers highlighted in red. Made with JavaScript and CSS Grid.</p>
-            </div>
-            <div class="project">
-                <a href="https://classson.github.io/city-planner/" target="_blank"><h3 class="project-tile">City Planner</h3>
-                <img class="screenshot" src="https://i.postimg.cc/dtgXZW0x/resized_City.png"></a>
-                <p class="projDes">City Planner is a site that creates fake NYC neighborhoods from randomly chosen words and word fragments using JavaScript.</p>
-            </div>
-            <div class="project">
-                <a href="https://classson.github.io/weather-app/weather.html" target="_blank"><h3 class="project-tile">Weather Conditions</h3>
-                <img class="screenshot" src="https://i.postimg.cc/qRp9wQWx/resizedweath2.png"></a>
-                <p class="projDes">Weather Conditions uses WeatherUnderground's api to display the current locale weather conditions. It utilizes geocod.io's reverse geolocation api, jquery and bootstrap and includes a JS function to switch from fahrenheit to celsius.</p>
-            </div>
+        <div class="project">
+          <a href="https://classson.github.io/markov/" target="_blank"
+            ><h3 class="project-tile">Poem Generator</h3>
+            <img
+              class="screenshot"
+              src="https://i.postimg.cc/RVWyFrvt/resized_Mark.png"
+          /></a>
+
+          <p class="projDes">
+            A JavaScript poem generator that uses a Markov Chain either one or
+            two words deep. "Poems" are created using a randomly selected first
+            word from user inputed text with either random or user inputed words
+            per line and lines per poem.
+          </p>
         </div>
-        <div id="con">
-            <h1>contact</h1>
-            <div id="contact">
-                <a href="https://github.com/Classson" target="_blank" id="profile-link"><h3>GitHub</h3><i class="fab fa-github"></i></a>
-                <a href="mailto:Alex.mikulewicz@gmail.com" target="_blank"><h3>Email</h3><i class="far fa-envelope"></i></a>
-                <a href="https://www.instagram.com/redredrobot/" target="_blank"><h3>Instagram</h3><i class="fab fa-instagram"></i></a>
-            </div>
+        <div class="project">
+          <a href="http://www.detectex.dev/" target="_blank"
+            ><h3 class="project-tile">DetectEx</h3>
+            <img
+              class="screenshot"
+              src="https://i.postimg.cc/G2pCwtdN/Detect-Screen.png"
+          /></a>
+
+          <p class="projDes">
+            DetectEx is an educational game that teaches the player to use
+            Regular Expressions through a fun puzzle-solving adventure. We
+            integrated an Express server with a PostgreSQL database in order to
+            track user location and send game data based on user progress in
+            realtime. On the front end we used React and Material UI to render
+            the game as a single page web application. Sound, animation and a
+            fun story make for an engaging user experience.
+          </p>
         </div>
+        <div class="project">
+          <a href="https://classson.github.io/sudoku/" target="_blank"
+            ><h3 class="project-tile">Sudoku Checker</h3>
+            <img
+              class="screenshot"
+              src="https://i.postimg.cc/d3LNNf6r/resized_Sud2.png"
+          /></a>
+
+          <p class="projDes">
+            Sudoku Checker is a site that accepts an array from the user and
+            checks it against sudoku rules. The input grid is then displayed
+            with incorrect rows, columns, sections and numbers highlighted in
+            red. Made with JavaScript and CSS Grid.
+          </p>
+        </div>
+        <div class="project">
+          <a href="https://classson.github.io/city-planner/" target="_blank"
+            ><h3 class="project-tile">City Planner</h3>
+            <img
+              class="screenshot"
+              src="https://i.postimg.cc/dtgXZW0x/resized_City.png"
+          /></a>
+
+          <p class="projDes">
+            City Planner is a site that creates fake NYC neighborhoods from
+            randomly chosen words and word fragments using JavaScript.
+          </p>
+        </div>
+        <div class="project">
+          <a
+            href="https://classson.github.io/weather-app/weather.html"
+            target="_blank"
+            ><h3 class="project-tile">Weather Conditions</h3>
+            <img
+              class="screenshot"
+              src="https://i.postimg.cc/qRp9wQWx/resizedweath2.png"
+          /></a>
+
+          <p class="projDes">
+            Weather Conditions uses WeatherUnderground's api to display the
+            current locale weather conditions. It utilizes geocod.io's reverse
+            geolocation api, jquery and bootstrap and includes a JS function to
+            switch from fahrenheit to celsius.
+          </p>
+        </div>
+      </div>
+      <div id="con">
+        <h1>contact</h1>
+        <div id="contact">
+          <a
+            href="https://github.com/Classson"
+            target="_blank"
+            id="profile-link"
+            ><h3>GitHub</h3>
+            <i class="fab fa-github"></i
+          ></a>
+          <a href="mailto:Alex.mikulewicz@gmail.com" target="_blank"
+            ><h3>Email</h3>
+            <i class="far fa-envelope"></i
+          ></a>
+          <a href="https://www.instagram.com/redredrobot/" target="_blank"
+            ><h3>Instagram</h3>
+            <i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
