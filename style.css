@@ -48,7 +48,6 @@ main {
     margin-top: 90px;
     width: 100%;
     padding: 0px;
-    margin 0px;
     height: calc(100vh - 60px);
     height: -o-calc(100vh - 60px);
     height: -webkit-calc(100vh - 60px);
@@ -129,7 +128,7 @@ i {
     padding-top: 100px;
 }
 
-@keyframes bkFade { 
+@keyframes bkFade {
     0%{background-position:75% 0%}
     50%{background-position:25% 100%}
     100%{background-position:75% 0%}
@@ -152,15 +151,15 @@ i {
 }
 
 @media (max-width: 600px) {
-    
+
     ul {
         justify-content: center;
     }
-    
+
     li {
         font-size: 4.5vw;
     }
-    
+
     #projects {
         grid-template-columns: 1fr;
     }
