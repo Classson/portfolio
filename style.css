@@ -163,4 +163,8 @@ i {
     #projects {
         grid-template-columns: 1fr;
     }
+
+    #contact a {
+        font-size: 9px;
+    }
 }
